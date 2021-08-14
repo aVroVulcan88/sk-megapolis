@@ -1,3 +1,5 @@
+@import url("./fonts.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,4 +12,8 @@
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
 }
