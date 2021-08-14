@@ -1,12 +1,5 @@
 <template>
-  <router-link
-    :to="{ name: 'home' }"
-    class="text-red-700">
-    HOME
-  </router-link>
-  <router-link :to="{ name: 'about' }">
-    ABOUT
-  </router-link>
+  <the-header />
   <router-view v-slot="{ Component }">
     <transition
       name="fade"
@@ -16,4 +9,6 @@
   </router-view>
 </template>
 
-<script setup></script>
+<script setup>
+import TheHeader from './components/TheHeader.vue';
+</script>
